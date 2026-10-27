@@ -28,5 +28,17 @@ syntax:
 
 pointers
 int *add_temp; -> pointer Declaration
-
 add_temp = &temp;
+
+Types of pointers
+- void pointer - void *pointer_name;
+- null pointer : pointer that points to no object or function.
+- wild pointer 
+- dangling pointer 
+
+pointer arithmetic
+// Do's
+- pointer + integer
+- pointer - integer
+- pointer++ and pointer--
+- pointer - pointer
