@@ -42,3 +42,11 @@ pointer arithmetic
 - pointer - integer
 - pointer++ and pointer--
 - pointer - pointer
+
+
+Array
+- Collection of elements of same data types stored in continuos memory location.
+syntax : data_type array_name[size];
+eg : int temp[5];
+
+q: find the largest and smallest element in an array
