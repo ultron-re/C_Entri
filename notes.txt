@@ -62,3 +62,16 @@ Bitwise Operators
 
 q: how to perfrom +,/.- and * without operators
 q: upper to lower and viceversa
+
+
+Memory
+- stack
+- heap
+- uninitialised DS (BSS)
+- initialised DS
+
+Dynamic Memory Allocation
+
+- calloc
+- malloc
+- realloc
