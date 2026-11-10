@@ -50,3 +50,15 @@ syntax : data_type array_name[size];
 eg : int temp[5];
 
 q: find the largest and smallest element in an array
+
+
+Bitwise Operators
+- And 
+- or
+- Xor
+- Not
+- Left SHift
+- Right shift
+
+q: how to perfrom +,/.- and * without operators
+q: upper to lower and viceversa
