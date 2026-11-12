@@ -3,15 +3,23 @@
 
 int main()
 {
-    int *ptr = (int *)malloc(sizeof(int)); // Allocate memory for an integer
+    int *ptr = (int *)malloc(sizeof(int)*5);
 
-    if (ptr == NULL) // Check if memory allocation was successful
+    if (ptr == NULL) 
     {
         printf("Memory allocation failed\n");
-        return 1; // Exit the program with an error code
+        return 1; 
     }
 
-    *ptr = 42; // Assign a value to the allocated memory
-    printf("Value: %d\n", *ptr); // Print the value stored in the
+    for(int i = 0; i < 5; i++) 
+    {
+        scanf("%d", &ptr[i]); 
+    }
 
+    for(int i = 0; i < 5; i++) 
+    {
+        printf("%d ", ptr[i]); 
+    }
+
+    free(ptr); // Deallocate the dynamically allocated memory
 }

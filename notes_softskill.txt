@@ -16,4 +16,11 @@ Social media and todays youth
 time waste
 
 AI- Boon or Bane?
-Influence of AI in Embedded Systems
+- influential techs
+- changing how we work, learn and even communicate
+- opeing many opportunities in the tech world as well as diminishing a quite few
+
+- ultimately it comes down to how we use it
+
+
+Future challenges of embedded system engineering
