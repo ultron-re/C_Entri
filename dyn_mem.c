@@ -21,5 +21,6 @@ int main()
         printf("%d ", ptr[i]); 
     }
 
+    
     free(ptr); // Deallocate the dynamically allocated memory
 }
