@@ -1,0 +1,40 @@
+1. Storage classes in C
+In C programming, storage classes are keywords that define the scope, lifetime,
+ default initial value, and storage location of variables and functions.
+There are four main storage class specifiers: auto, register, static, and extern. 
+
+1. auto
+The default storage class for local variables declared inside a function or block. 
+
+Lifetime: Exists only while the block/function is executing. 
+Scope: Local to the block. 
+Storage: RAM (Stack).
+Default Value: Garbage (uninitialized). 
+
+2. register
+Used to suggest to the compiler that a variable should be stored in a CPU register for 
+faster access, typically for frequently used variables like counters. 
+
+Lifetime: Same as auto.
+Scope: Local to the block. 
+Storage: CPU Register (if available), otherwise RAM.
+Default Value: Garbage.
+Note: You cannot apply the address-of operator (&) to register variables. 
+
+3. static
+Instructs the compiler to keep the variable in existence during the entire lifetime of the program. 
+
+Local Static: Retains its value between function calls; scope is limited to the function. 
+Global Static: Limits the variable's scope to the file in which it is declared (internal linkage). 
+Lifetime: Entire program runtime.
+Storage: RAM (Data Segment). 
+Default Value: Zero.
+
+4. extern
+Used to declare a variable or function that is defined elsewhere (in another file or section of the code).  It tells the compiler that the variable exists, but its definition will be provided later.
+
+Lifetime: Entire program runtime. 
+Scope: Global (accessible across multiple files). 
+Storage: RAM.
+Default Value: Zero.
+2. 

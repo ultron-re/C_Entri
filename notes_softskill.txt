@@ -41,3 +41,12 @@ AI- Boon or Bane?
 
 
 Future challenges of embedded system engineering
+
+name
+contact details
+professional summary
+certification
+projects
+technical skills
+experience
+education
