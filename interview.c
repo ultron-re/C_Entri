@@ -81,4 +81,5 @@ int main()
     return 0;
 }
 
+gets - 3*3*3+3 = 27 + 3 = 30
 */

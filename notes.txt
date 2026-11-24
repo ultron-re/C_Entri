@@ -75,3 +75,9 @@ Dynamic Memory Allocation
 - calloc
 - malloc
 - realloc
+
+Stucture
+
+structure pointer 
+
+Nested structure
