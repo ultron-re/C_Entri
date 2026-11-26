@@ -1,29 +1,34 @@
-/* you are given an 8 bit register as an unsigned char. 
-write a function to:
-Set the third bit index 2
-clear the 6th bit 
-toggle the 1st bit
-return the modified register value. Use bitwise operators only avoid loops 
-*/
-
 #include <stdio.h>
 
-unsigned char modify(unsigned char reg)
+int sort(int *arr, int n)
 {
-    reg = reg | (1<<2);
-    reg = reg & ~(1<<5);
-    reg = reg ^ 1;
+    int lar = arr[0], sec_lar ;
 
-    return reg;
+    for(int i=1;i<n;i++)
+    {
+        if(lar < arr[i])
+        {
+            sec_lar = lar;
+            lar = arr[i];
+        }
+        else if((arr[i]>sec_lar ) && (arr[i]!=lar))
+        {
+            sec_lar = arr[i];
+        }
+    }
+    return sec_lar;
 }
-
 int main()
 {
-    unsigned char reg  = 1; 
-
-    printf("Register value before modification : %u\n", reg);
-    reg = modify(reg);
-    printf("Register value after modification : %u\n", reg);
+    int n;
+    printf("Enter the size of the array : ");
+    scanf("%d",&n);
+    int arr[n];
+    for(int i = 0; i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    int sec_lar;
+    sec_lar = sort(arr,n);
+    printf("Second largest number is : %d\n",sec_lar);
 }
-
-
