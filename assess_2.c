@@ -19,7 +19,8 @@ unsigned char modify(unsigned char reg)
 
 int main()
 {
-    unsigned char reg  = 1; 
+    unsigned char reg =35; 
+
 
     printf("Register value before modification : %u\n", reg);
     reg = modify(reg);

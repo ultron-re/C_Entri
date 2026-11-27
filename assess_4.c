@@ -2,13 +2,18 @@
 
 int main()
 {
-    for( int i=0;i<5;i++)
+    int num;
+    printf("Enter a number : ");
+    scanf("%d",&num);
+
+    int sum = 0;
+
+    while(num>0)
     {
-        for(int j=0;j<(2*i+1);j++)
-        {
-            printf("*");
-        }
-        printf("\n");
+        sum += num%10; 
+        num = num/10;
     }
+
+    printf("The sum of the digits: %d\n",sum);
     return 0;
 } 
